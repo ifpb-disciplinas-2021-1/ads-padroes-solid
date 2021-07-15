@@ -15,7 +15,7 @@ public class AplicaTaxas {
         this.item = item;
     }
 
-    public double taxas(LocalDate date) {
+    public double calcula(LocalDate date) {
         if (taxavel(this.item)) {
             Taxavel taxavel = transformar(item);
             return taxavel.taxas(date);

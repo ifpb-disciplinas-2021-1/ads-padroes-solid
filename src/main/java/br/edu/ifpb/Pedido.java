@@ -32,7 +32,7 @@ public class Pedido {
     public double taxas() {
         return itens.stream()
             .map(AplicaTaxas::new)
-            .mapToDouble(item -> item.taxas(criadoEm))
+            .mapToDouble(item -> item.calcula(criadoEm))
             .sum();
     }
     
