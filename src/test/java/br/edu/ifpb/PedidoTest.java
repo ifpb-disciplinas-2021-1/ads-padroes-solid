@@ -77,7 +77,9 @@ public class PedidoTest {
     
         @Test
     public void testCalcularTaxasComDesconto() {
-        LocalDate october = LocalDate.of(2021,Month.OCTOBER,1);
+        LocalDate october = LocalDate.of(
+            2021,Month.OCTOBER,1
+        );
         Pedido pedido = new Pedido(october);
         pedido.adicionar(new Eletronico("televisão", 4000.0));
         pedido.adicionar(new Eletronico("notebook", 3000.0));
